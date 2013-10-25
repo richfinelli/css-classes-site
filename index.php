@@ -21,7 +21,7 @@
 <div class="introduction">
 <h1>Intro to CSS</h1>
 <p>
-This site serves as the class syllabus for Mercer County Community College's Intro to Cascading Style Sheets, a core class to obtain the web designer certificate. Cascading Style Sheets control the presentation of HTML elements. CSS controls the look and feel of websites and is a core skill to learn as a web designer.  
+This kewl site serves as the class syllabus for Mercer County Community College's Intro to Cascading Style Sheets, a core class to obtain the web designer certificate. Cascading Style Sheets control the presentation of HTML elements. CSS controls the look and feel of websites and is a core skill to learn as a web designer.  
 <br><br>
 <span class="emphasis">Book:</span> No book needed for this class.<br><br>
 <span class="emphasis">Prerequisite class:</span> Essentials of HTML<br><br>
