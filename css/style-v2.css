@@ -1,0 +1,410 @@
+/*********
+SASS VARIABLES
+*********/
+/* text color */
+/* background color */
+/* background color alt */
+/* accent color */
+/*********************
+CSS Reset
+*********************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+/**************
+web fonts
+**************/
+@font-face {
+  font-family: 'bebas';
+  src: url("../fonts/BebasNeue-webfont.eot");
+  src: url("../fonts/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue-webfont.woff") format("woff"), url("../fonts/BebasNeue-webfont.ttf") format("truetype"), url("../fonts/BebasNeue-webfont.svg#bebas_neueregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'quicksand';
+  src: url("../fonts/quicksand-light-webfont.eot");
+  src: url("../fonts/quicksand-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/quicksand-light-webfont.woff") format("woff"), url("../fonts/quicksand-light-webfont.ttf") format("truetype"), url("../fonts/quicksand-light-webfont.svg#quicksandlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*********************
+START OF MY STYLING
+*********************/
+/*********************
+Basic Styles
+*********************/
+body {
+  background-color: #0eadff;
+  line-height: 1.4em;
+  font-size: 100%;
+  font-family: "quicksand", "myriad-pro-1", "myriad-pro-2", "Lucida Grande", Sans-Serif; }
+
+body.advanced {
+  background-color: #2286c9; }
+
+.wrapper {
+  width: 75.949367088607594936708860759494%;
+  /* 960px/1280px */
+  margin: 0 auto; }
+
+.display-none {
+  display: none; }
+
+h1 {
+  font-size: 4em;
+  /* 32px/16px */
+  line-height: 50px;
+  color: #f4f1de;
+  margin-bottom: 25px;
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  -o-column-span: all;
+  column-span: all; }
+
+h2 {
+  font-size: 2.5em;
+  /* 28px/16px */
+  color: #f4f1de;
+  text-transform: none;
+  margin: 10px 0px; }
+
+h3 {
+  font-size: 2em;
+  /* 20px/16px */
+  color: #f4f1de;
+  text-transform: none;
+  margin: 7px 0px; }
+
+h1, h2, h3, .nav a {
+  font-family: "bebas", sans-serif; }
+
+p, li, label {
+  color: #f4f1de;
+  font-size: 1.3em;
+  line-height: 1.4em; }
+
+.small {
+  font-size: 0.9em; }
+
+.transition, .secondary-section a, .main-content a, .class-info a, footer a {
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -ms-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear; }
+
+.transition-background-only li {
+  -webkit-transition: background-color 0.25s linear;
+  -moz-transition: background-color 0.25s linear;
+  -ms-transition: background-color 0.25s linear;
+  -o-transition: background-color 0.25s linear;
+  transition: background-color 0.25s linear; }
+
+/*********************
+Header
+*********************/
+header {
+  width: 100%;
+  /* 960px/960px */
+  -webkit-text-shadow: 1px 1px #ec6e61, 2px 2px #ec6e61, 3px 3px #ec6e61, 4px 4px #ec6e61, 5px 5px #ec6e61;
+  -moz-text-shadow: 1px 1px #ec6e61, 2px 2px #ec6e61, 3px 3px #ec6e61, 4px 4px #ec6e61, 5px 5px #ec6e61;
+  -ms-text-shadow: 1px 1px #ec6e61, 2px 2px #ec6e61, 3px 3px #ec6e61, 4px 4px #ec6e61, 5px 5px #ec6e61;
+  -o-text-shadow: 1px 1px #ec6e61, 2px 2px #ec6e61, 3px 3px #ec6e61, 4px 4px #ec6e61, 5px 5px #ec6e61;
+  text-shadow: 1px 1px #ec6e61, 2px 2px #ec6e61, 3px 3px #ec6e61, 4px 4px #ec6e61, 5px 5px #ec6e61; }
+
+header h1 {
+  color: #f4f1de;
+  text-align: center;
+  margin: 100px 0;
+  font-size: 5em;
+  line-height: 1.1em; }
+
+/*********************
+Navigation
+*********************/
+nav {
+  height: 80px;
+  margin: 0;
+  background-color: #ec6e61; }
+
+.nav {
+  margin: 25px 0 0 0;
+  width: 49.937578027466%;
+  /* 400/801p */
+  float: left;
+  text-align: center; }
+
+.nav a, .nav a:visited {
+  font-size: 2em;
+  color: #f4f1de;
+  text-decoration: none; }
+
+.nav a:hover {
+  text-decoration: none;
+  -webkit-text-shadow: 1px 1px #0eadff, 2px 2px #0eadff, 3px 3px #0eadff, 4px 4px #0eadff, 5px 5px #0eadff;
+  -moz-text-shadow: 1px 1px #0eadff, 2px 2px #0eadff, 3px 3px #0eadff, 4px 4px #0eadff, 5px 5px #0eadff;
+  -ms-text-shadow: 1px 1px #0eadff, 2px 2px #0eadff, 3px 3px #0eadff, 4px 4px #0eadff, 5px 5px #0eadff;
+  -o-text-shadow: 1px 1px #0eadff, 2px 2px #0eadff, 3px 3px #0eadff, 4px 4px #0eadff, 5px 5px #0eadff;
+  text-shadow: 1px 1px #0eadff, 2px 2px #0eadff, 3px 3px #0eadff, 4px 4px #0eadff, 5px 5px #0eadff; }
+
+.advanced .nav a:hover {
+  text-decoration: none;
+  -webkit-text-shadow: 1px 1px #2286c9, 2px 2px #2286c9, 3px 3px #2286c9, 4px 4px #2286c9, 5px 5px #2286c9;
+  -moz-text-shadow: 1px 1px #2286c9, 2px 2px #2286c9, 3px 3px #2286c9, 4px 4px #2286c9, 5px 5px #2286c9;
+  -ms-text-shadow: 1px 1px #2286c9, 2px 2px #2286c9, 3px 3px #2286c9, 4px 4px #2286c9, 5px 5px #2286c9;
+  -o-text-shadow: 1px 1px #2286c9, 2px 2px #2286c9, 3px 3px #2286c9, 4px 4px #2286c9, 5px 5px #2286c9;
+  text-shadow: 1px 1px #2286c9, 2px 2px #2286c9, 3px 3px #2286c9, 4px 4px #2286c9, 5px 5px #2286c9; }
+
+/*********************
+Main Content
+*********************/
+.main-content {
+  width: 66.666666666666666666666666666667%;
+  /* 640px/960px */
+  padding: 0px;
+  margin: 0px 0px 20px 0px;
+  float: right; }
+
+.main-content a {
+  color: #f4f1de;
+  text-decoration: none;
+  border-bottom: 2px dotted #ec6e61; }
+
+.main-content a:visited {
+  color: #f4f1de; }
+
+.main-content a:hover {
+  color: #f4f1de;
+  text-decoration: none;
+  border-bottom: 2px dotted #ec6e61; }
+
+.introduction {
+  padding: 10px 3.125%;
+  /* 20px/640px */
+  margin: 0px; }
+
+.introduction p, .introduction h1 {
+  color: #f4f1de; }
+
+.introduction a:hover {
+  border-bottom: 2px dotted #ccc; }
+
+.emphasis {
+  font-family: "bebas", sans-serif;
+  font-size: 1.4em; }
+
+.class-info {
+  margin: 30px auto;
+  padding: 10px 3.125%;
+  /* 20px/640px */ }
+
+.clearfloat {
+  clear: both; }
+
+.class-info h2 {
+  border-bottom: 6px solid #f4f1de;
+  margin-bottom: 15px;
+  padding-bottom: 15px; }
+
+.class-info p {
+  color: #f4f1de;
+  margin-bottom: 10px; }
+
+.main-content .class-info a {
+  color: #f4f1de;
+  text-decoration: none;
+  border-bottom: 2px dotted #fff; }
+
+.main-content .class-info a:hover {
+  text-decoration: none;
+  border-bottom: 2px dotted #ec6e61; }
+
+.main-content .class-info a:visited {
+  color: #f4f1de; }
+
+.main-content .class-info a.button {
+  font-size: 1.5em;
+  /* 14px/16px */
+  font-family: "bebas", sans-serif;
+  margin: 10px 5px;
+  padding: 5px .94339622641509433962264150943396%;
+  /* 5px/530px */
+  line-height: 20px;
+  float: right;
+  border: none; }
+
+.main-content .class-info .button:hover {
+  -webkit-text-shadow: 1px 1px #ec6e61, 2px 2px #ec6e61, 3px 3px #ec6e61;
+  -moz-text-shadow: 1px 1px #ec6e61, 2px 2px #ec6e61, 3px 3px #ec6e61;
+  -ms-text-shadow: 1px 1px #ec6e61, 2px 2px #ec6e61, 3px 3px #ec6e61;
+  -o-text-shadow: 1px 1px #ec6e61, 2px 2px #ec6e61, 3px 3px #ec6e61;
+  text-shadow: 1px 1px #ec6e61, 2px 2px #ec6e61, 3px 3px #ec6e61; }
+
+/*********************
+Secondary Content
+*********************/
+.secondary-content {
+  width: 30%;
+  /* 230px/960px */
+  border: none;
+  padding: 0px;
+  margin: 0px 0px 20px 0px;
+  float: left; }
+
+h3.separation {
+  margin: 10px 0px 10px -8.6956521739130434782608695652174%;
+  /* -20px/230px */
+  padding: 0 4.3478260869565217391304347826087%;
+  /* 10px/230px */ }
+
+.secondary-section {
+  /* Total Width 230px */
+  margin: 15px 0;
+  padding: 10px 0;
+  /* 20px/190px */ }
+
+.secondary-section a {
+  color: #f4f1de;
+  text-decoration: none; }
+
+.secondary-section a:visited {
+  color: #f4f1de; }
+
+.secondary-section a:hover {
+  color: #f4f1de;
+  background-color: #ec6e61;
+  text-decoration: none;
+  border-bottom: 1px dotted #f4f1de; }
+
+.secondary-section p {
+  color: #f4f1de; }
+
+.secondary-content li {
+  list-style: disc;
+  margin-left: 10px; }
+
+/*********************
+footer
+*********************/
+footer {
+  clear: both;
+  height: 100px;
+  background-color: #ec6e61;
+  padding: 50px 0px 50px 0px;
+  text-align: center; }
+
+footer a {
+  color: #f4f1de;
+  text-decoration: none;
+  padding: 1px;
+  border-bottom: 2px dotted #fff; }
+
+footer a:hover {
+  border-bottom: 2px dotted #111; }
+
+footer a:visited {
+  color: #f4f1de; }
+
+footer b.highlight {
+  font-weight: bold; }
+
+footer p:first-child {
+  font-family: "bebas", sans-serif;
+  font-size: 1.4em;
+  margin-bottom: 5px; }
+
+/*********************
+Form and input styling
+*********************/
+.main-content.full-width {
+  width: 95%; }
+
+.contact {
+  padding: 10px 3.125%;
+  /* 20px/640px */
+  margin: 0px; }
+
+.contact p {
+  padding: 20px 0; }
+
+.contact label {
+  display: block;
+  margin-top: 10px;
+  font-size: 2em;
+  font-family: "bebas", sans-serif; }
+
+.contact input, .contact textarea {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 1.35em;
+  color: #ec6e61; }
+
+.contact textarea {
+  width: 80%; }
+
+.contact input[type="submit"] {
+  padding: 10px;
+  font-family: "bebas", sans-serif; }
+
+.margin-bottom {
+  margin-bottom: 200px; }
+
+/*****************************
+----START OF MEDIA QUERIES----
+*****************************/
+/********************************************************
+Media Query for Mobile Devices 850px or less (iPad, smart phones)
+********************************************************/
+@media all and (max-width: 950px) {
+  .wrapper {
+    width: 95%; }
+
+  .main-content {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px dotted #f4f1de; }
+
+  .secondary-content {
+    float: none;
+    width: 95%;
+    margin: 0 auto; }
+
+  h3.separation {
+    margin-left: 0;
+    padding: 0 0 10px 0;
+    border-bottom: 4px solid #f4f1de; }
+
+  h3.separation:first-child {
+    margin-top: 50px; }
+
+  .secondary-content li {
+    list-style: disc;
+    margin-left: 40px; } }
